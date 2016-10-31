@@ -35,7 +35,10 @@ namespace Zaloka.Controllers
         }
 
 
-
+        public ActionResult Admin()
+        {
+            return View();
+        }
 
         public ActionResult About()
         {

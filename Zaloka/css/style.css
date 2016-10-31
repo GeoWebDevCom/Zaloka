@@ -533,3 +533,7 @@ footer ul {
 		height: 300px;
 	}
 }
+
+.missing-field {
+    border-color:red;
+}
