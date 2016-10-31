@@ -276,13 +276,15 @@ ul.topnav li.icon {display: none;}
 }
 
 .used_head {
-	text-align: center;
-	width: 600px;
+	text-align: left;
+	/*width: 600px;*/
 	padding-top:40px;
+        padding-left: 10%;
 }
 
 .used_head  img{
-	max-width:90%;
+	max-width:600px;
+    /*width:100%;*/
 }
 .list, .list2{
 	background-image:url("/img/bg-list.png") ;
@@ -382,6 +384,17 @@ footer ul {
 
 /*  GO FULL WIDTH AT LESS THAN 880 PIXELS */
 @media only screen and (max-width: 880px) {
+    .used_head {
+	text-align: left;
+	width: 600px;
+	padding-top:40px;
+        padding-left: 0px;
+}
+
+    .used_head  img{
+	max-width:600px;
+    /*width:100%;*/
+}
 	.top_section{
 		position:static;
 	}
@@ -426,7 +439,7 @@ footer ul {
 		margin-left; 20px;
 	}
 	#thankyou .thankContent .product{
-		margin-right; 20px;
+		margin-right: 20px;
 	}
 }
 	
@@ -480,7 +493,16 @@ footer ul {
 		margin:-15% auto 0 auto;
 		text-align:center;
 	}
+.used_head {
+	text-align: left;
+	width: 600px;
+	padding-top:40px;
+    padding-left: 0px;
 }
+    .used_head  img{
+	    max-width:600px;
+        width:100%;
+    }
 }
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 @media only screen and (max-width: 480px) {
@@ -494,8 +516,12 @@ footer ul {
 		text-align: center;
 		width: 100%;
 		margin: 0;
+        padding-left: 0px;
 	}
-	
+	.used_head  img{
+	max-width:600px;
+    width:100%;
+}
 	.footer_img .product {
 		height: 300px;
 	}
