@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Zaloka.Models;
 
 namespace Zaloka.Controllers
 {
@@ -20,6 +21,20 @@ namespace Zaloka.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public string SubmitInfor(string name, string email, string phone)
+        {
+            using (ZalokaEntities db = new ZalokaEntities())
+            {
+
+            }
+
+
+                return "";
+        }
+
+
 
 
         public ActionResult About()

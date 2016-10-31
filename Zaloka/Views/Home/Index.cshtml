@@ -38,15 +38,15 @@
         <table class="reg_form">
             <tr>
                 <td>Họ và tên:</td>
-                <td><input type="text" /></td>
+                <td><input id="name" type="text" /></td>
             </tr>
             <tr>
                 <td>Email:</td>
-                <td><input type="text" /></td>
+                <td><input id="email" type="text" /></td>
             </tr>
             <tr>
                 <td>Số điện thoại:</td>
-                <td><input type="text" /></td>
+                <td><input id="phone" type="text" /></td>
             </tr>
         </table>
         <a class="btn-reg" href="thankyou.html">Đăng ký tư vấn</a>
@@ -145,3 +145,27 @@
         </div>
     </article>
 </section>
+
+
+<script>
+
+    function submitInfor() {
+
+        $.ajax({
+            method: "POST",
+            url: "/Home/SubmitInfor",
+            data: {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                phone: $("#phone").val()
+            }
+        }).done(function (data) {
+            if (data == "ok") {
+                window.location = "/";
+            } else {
+                console.log("Lưu thất bại");
+            }
+        })
+    }
+
+</script>
