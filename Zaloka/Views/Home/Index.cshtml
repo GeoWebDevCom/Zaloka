@@ -1,207 +1,143 @@
-﻿@{ 
-    Layout = null;
-}
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Insert title here</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/javascript/common.js"></script>
-</head>
-<body>
-    <header>
-        <img class="desktop680 logo" src="/img/logo.png">
-        <img class="mobile680  logo" src="/img/logoM.png">
-        <ul id="menu" class="topnav">
-            <li class="menu_item home"><a href="#home" class="selected">Trang chủ</a></li>
-            <li class="menu_item"><a href="#used">Công dụng</a></li>
-            <li class="menu_item"><a href="#how">Cách sử dụng</a></li>
-            <li class="menu_item"><a href="#register">Đăng ký tư vấn</a></li>
-            <li class="icon"><a href="javascript:void(0);" onclick="openMenu()">☰</a></li>
-        </ul>
-    </header>
-    <section id="home" class="top_section">
-        <div class="my_slide">
-            <div class="mySlides slide1">
-                <article class="desktop">
-                    <img width="100%" height="auto" src="/img/top-bg.png">
-                </article>
-                <article class="mobile">
-                    <img width="100%" height="auto" src="/img/m-top-bg.png">
-                </article>
-            </div>
-            <div class="mySlides slide2">
-                <article class="desktop">
-                    <img width="100%" height="auto" src="/img/top-bg2.png">
-                </article>
-                <article class="mobile">
-                    <img width="100%" height="auto" src="/img/m-top-bg2.png">
-                </article>
-            </div>
-            <div class="dot_group">
-                <span class="dot active" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-            </div>
+﻿
+<section id="home" class="top_section">
+    <div class="my_slide">
+        <div class="mySlides slide1">
+            <article class="desktop">
+                <img width="100%" height="auto" src="/img/top-bg.png">
+            </article>
+            <article class="mobile">
+                <img width="100%" height="auto" src="/img/m-top-bg.png">
+            </article>
         </div>
-        <aside class="mobile">
-            <img width="100%" height="auto" src="/img/top-sp.png">
-        </aside>
-        <aside class="reg_aside">
-            <h2>Đăng ký tư vấn & nhận ưu đãi</h2>
-            <p>
-                Vui lòng nhập thông tin ở dưới để<br> chúng tôi liên hệ và tư vấn
-                thêm cho bạn nhé!
-            </p>
-            <table class="reg_form">
-                <tr>
-                    <td>Họ và tên:</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td><input type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Số điện thoại:</td>
-                    <td><input type="text" /></td>
-                </tr>
-            </table>
-            <a class="btn-reg" href="thankyou.html">Đăng ký tư vấn</a>
-            <img src="/img/sdt.png" />
-        </aside>
-    </section>
-    <section>
-        <article id="used">
-            <div class="used_head">
-                <img src="/img/slogan.png">
-            </div>
-            <div class="section group">
-                <div class="col span_1_of_3">
-                    <img alt="" src="/img/used/1.png">
-                    <p>
-                        Giúp mi mọc tốt với 5 tiêu chí:<br> Dày - Dài - Cong - Đen -
-                        Bóng như
-                    </p>
-                </div>
-                <div class="col span_1_of_3">
-                    <img alt="" src="/img/used/2.png">
-                    <p>
-                        Phục hồi mau chóng những hư tổn do các sản phẩm kém chất
-                        lượng trước đây gây ra
-                    </p>
-                </div>
-                <div class="col span_1_of_3">
-                    <img alt="" src="/img/used/3.png">
-                    <p>
-                        Giữ cho vùng da quanh mắt luôn căng mịn, tươi tắn tràn đầy
-                        sức sống
-                    </p>
-                </div>
-            </div>
-            <div class="section group">
-                <div class="col span_1_of_3">
-                    <img alt="" src="/img/used/4.png">
-                    <p>
-                        Kích thích các nang lông khoẻ hơn, và cải thiện các nang
-                        lông mi mềm và dễ gãy giúp tăng độ đàn hồi cho lông mi
-                    </p>
-                </div>
-                <div class="col span_1_of_3">
-                    <img alt="" src="/img/used/5.png">
-                    <p>
-                        Chất chống oxy hoá tự nhiên mạnh mẽ sẽ chữa trị và bảo vệ
-                        vùng da nhạy cảm xung quanh mắt
-                    </p>
-                </div>
-                <div class="col span_1_of_3">
-                    <img alt="" src="/img/used/6.png">
-                    <p>
-                        Bảo vệ một lớp oxy hoá tự nhiên giúp mi chống lại các tác
-                        động không tốt từ môi trường
-                    </p>
-                </div>
-            </div>
-        </article>
-        <article id="how" class="list">
-            <div>
-                <img class="desktop topline" src="/img/desktop-3.png">
-                <img class="mobile topline" src="/img/mobile-3.png">
-                <ul>
-                    <li>
-                        Bảo vệ một lớp oxy hoá tự nhiên giúp mi chống lại các tác động
-                        không tốt từ môi trường.
-                    </li>
-                    <li>
-                        Hàng đêm trước khi đi ngủ sử dụng NuTra Luxe Lash MD như bút
-                        kẻ mắt nước, chải một nét duy nhất lên mí mắt và chân mày
-                    </li>
-                    <li>
-                        Không nhúng thêm, lượng chất lỏng trên bàn chải là đủ cho chân
-                        mày, lông mi trên và dưới cả 2 mắt.
-                    </li>
-                    <li>
-                        Không chải quá gần với các cạnh của mí mắt và tránh chất lỏng
-                        dư thừa vào mắt.
-                    </li>
-                    <li>
-                        Nếu chất lỏng NuTra Luxe Lash MD rơi vào mắt, rửa sạch ngay
-                        với nước.
-                    </li>
-                    <li>
-                        Luôn luôn áp dụng NuTra Luxe Lash MD với sự chăm sóc tối đa và
-                        theo chỉ dẫn.
-                    </li>
-                </ul>
-                <img class="desktop pro" src="/img/desktop-3-1.png">
-            </div>
-        </article>
-        <article id="register" class="footer_img">
-            <img class="product" src="/img/img_footer.png">
-            <div class="mobile680">
-                <a href="#home"><img class="btn_reg" src="/img/reg.png"></a>
-            </div>
-        </article>
-    </section>
-    <footer class="desktop680">
-        <div class="group">
-            <aside class="r_border">
-                TRUNG TÂM TOMATO<br> E5, Đường Trần Não, Quận 2, TPHCM<br>
-                Hotline: 0166 8462016<br>
-            </aside>
-            <aside class="">
-                <ul>
-                    <li>Chuyên gia hổ trợ tư vấn 24/7</li>
-                    <li>Giao hàng MIỄN PHÍ tận nơi toàn quốc</li>
-                    <li>Cam kết 100% hàng chính hãng từ Mỹ</li>
-                </ul>
-            </aside>
+        <div class="mySlides slide2">
+            <article class="desktop">
+                <img width="100%" height="auto" src="/img/top-bg2.png">
+            </article>
+            <article class="mobile">
+                <img width="100%" height="auto" src="/img/m-top-bg2.png">
+            </article>
         </div>
-    </footer>
-    <div class="mobileFooter mobile680">
-        <div><strong>TRUNG TÂM TOMATO</strong></div>
-        <div>Địa chỉ: E5, Đường Trần Não, Quận 2, TPHCM</div>
+        <div class="dot_group">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
     </div>
-    <script>
-	$('a[href^="#"]').on('click', function (e) {
-	        e.preventDefault();
-	        $(document).off("scroll");
-	        $('a').each(function () {
-	            $(this).removeClass('selected');
-	        })
-	        $(this).addClass('selected');
-	         var target = this.hash,
-	         menu = target;
-	        $target = $(target);
-			$('html, body').stop().animate({
-	            'scrollTop': $target.offset().top+2
-	        }, 600, 'swing', function () {
-	            window.location.hash = target;
-	            $(document).on("scroll", onScroll);
-	        });
-	    });
-    </script>
-</body>
-</html>
+    <aside class="mobile">
+        <img width="100%" height="auto" src="/img/top-sp.png">
+    </aside>
+    <aside class="reg_aside">
+        <h2>Đăng ký tư vấn & nhận ưu đãi</h2>
+        <p>
+            Vui lòng nhập thông tin ở dưới để<br> chúng tôi liên hệ và tư vấn
+            thêm cho bạn nhé!
+        </p>
+        <table class="reg_form">
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td>Số điện thoại:</td>
+                <td><input type="text" /></td>
+            </tr>
+        </table>
+        <a class="btn-reg" href="thankyou.html">Đăng ký tư vấn</a>
+        <img src="/img/sdt.png" />
+    </aside>
+</section>
+<section>
+    <article id="used">
+        <div class="used_head">
+            <img src="/img/slogan.png">
+        </div>
+        <div class="section group">
+            <div class="col span_1_of_3">
+                <img alt="" src="/img/used/1.png">
+                <p>
+                    Giúp mi mọc tốt với 5 tiêu chí:<br> Dày - Dài - Cong - Đen -
+                    Bóng như
+                </p>
+            </div>
+            <div class="col span_1_of_3">
+                <img alt="" src="/img/used/2.png">
+                <p>
+                    Phục hồi mau chóng những hư tổn do các sản phẩm kém chất
+                    lượng trước đây gây ra
+                </p>
+            </div>
+            <div class="col span_1_of_3">
+                <img alt="" src="/img/used/3.png">
+                <p>
+                    Giữ cho vùng da quanh mắt luôn căng mịn, tươi tắn tràn đầy
+                    sức sống
+                </p>
+            </div>
+        </div>
+        <div class="section group">
+            <div class="col span_1_of_3">
+                <img alt="" src="/img/used/4.png">
+                <p>
+                    Kích thích các nang lông khoẻ hơn, và cải thiện các nang
+                    lông mi mềm và dễ gãy giúp tăng độ đàn hồi cho lông mi
+                </p>
+            </div>
+            <div class="col span_1_of_3">
+                <img alt="" src="/img/used/5.png">
+                <p>
+                    Chất chống oxy hoá tự nhiên mạnh mẽ sẽ chữa trị và bảo vệ
+                    vùng da nhạy cảm xung quanh mắt
+                </p>
+            </div>
+            <div class="col span_1_of_3">
+                <img alt="" src="/img/used/6.png">
+                <p>
+                    Bảo vệ một lớp oxy hoá tự nhiên giúp mi chống lại các tác
+                    động không tốt từ môi trường
+                </p>
+            </div>
+        </div>
+    </article>
+    <article id="how" class="list">
+        <div>
+            <img class="desktop topline" src="/img/desktop-3.png">
+            <img class="mobile topline" src="/img/mobile-3.png">
+            <ul>
+                <li>
+                    Bảo vệ một lớp oxy hoá tự nhiên giúp mi chống lại các tác động
+                    không tốt từ môi trường.
+                </li>
+                <li>
+                    Hàng đêm trước khi đi ngủ sử dụng NuTra Luxe Lash MD như bút
+                    kẻ mắt nước, chải một nét duy nhất lên mí mắt và chân mày
+                </li>
+                <li>
+                    Không nhúng thêm, lượng chất lỏng trên bàn chải là đủ cho chân
+                    mày, lông mi trên và dưới cả 2 mắt.
+                </li>
+                <li>
+                    Không chải quá gần với các cạnh của mí mắt và tránh chất lỏng
+                    dư thừa vào mắt.
+                </li>
+                <li>
+                    Nếu chất lỏng NuTra Luxe Lash MD rơi vào mắt, rửa sạch ngay
+                    với nước.
+                </li>
+                <li>
+                    Luôn luôn áp dụng NuTra Luxe Lash MD với sự chăm sóc tối đa và
+                    theo chỉ dẫn.
+                </li>
+            </ul>
+            <img class="desktop pro" src="/img/desktop-3-1.png">
+        </div>
+    </article>
+    <article id="register" class="footer_img">
+        <img class="product" src="/img/img_footer.png">
+        <div class="mobile680">
+            <a href="#home"><img class="btn_reg" src="/img/reg.png"></a>
+        </div>
+    </article>
+</section>

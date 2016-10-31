@@ -16,6 +16,11 @@ namespace Zaloka.Controllers
         {
             return View();
         }
+        public ActionResult ThankYou()
+        {
+            return View();
+        }
+
 
         public ActionResult About()
         {

@@ -1,0 +1,69 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/javascript/common.js"></script>
+</head>
+<body>
+    <header>
+        <img class="desktop680 logo" src="/img/logo.png">
+        <img class="mobile680  logo" src="/img/logoM.png">
+        <ul id="menu" class="topnav">
+            <li class="menu_item home"><a href="#home" class="selected">Trang chủ</a></li>
+            <li class="menu_item"><a href="#used">Công dụng</a></li>
+            <li class="menu_item"><a href="#how">Cách sử dụng</a></li>
+            <li class="menu_item"><a href="#register">Đăng ký tư vấn</a></li>
+            <li class="icon"><a href="javascript:void(0);" onclick="openMenu()">☰</a></li>
+        </ul>
+    </header>
+
+    @RenderBody()
+
+    <footer class="desktop680">
+        <div class="group">
+            <aside class="r_border">
+                TRUNG TÂM TOMATO<br> E5, Đường Trần Não, Quận 2, TPHCM<br>
+                Hotline: 0166 8462016<br>
+            </aside>
+            <aside class="">
+                <ul>
+                    <li>Chuyên gia hổ trợ tư vấn 24/7</li>
+                    <li>Giao hàng MIỄN PHÍ tận nơi toàn quốc</li>
+                    <li>Cam kết 100% hàng chính hãng từ Mỹ</li>
+                </ul>
+            </aside>
+        </div>
+    </footer>
+    <div class="mobileFooter mobile680">
+        <div><strong>TRUNG TÂM TOMATO</strong></div>
+        <div>Địa chỉ: E5, Đường Trần Não, Quận 2, TPHCM</div>
+    </div>
+    <script>
+	$('a[href^="#"]').on('click', function (e) {
+	        e.preventDefault();
+	        $(document).off("scroll");
+	        $('a').each(function () {
+	            $(this).removeClass('selected');
+	        })
+	        $(this).addClass('selected');
+	         var target = this.hash,
+	         menu = target;
+	        $target = $(target);
+			$('html, body').stop().animate({
+	            'scrollTop': $target.offset().top+2
+	        }, 600, 'swing', function () {
+	            window.location.hash = target;
+	            $(document).on("scroll", onScroll);
+	        });
+	    });
+    </script>
+</body>
+</html>
+
