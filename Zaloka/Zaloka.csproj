@@ -200,6 +200,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-datepicker.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\style.css" />
@@ -210,9 +211,11 @@
     <Content Include="img\bg-list.png" />
     <Content Include="img\bg-use.png" />
     <Content Include="img\bg.png" />
+    <Content Include="img\brush.png" />
     <Content Include="img\btnreg.png" />
     <Content Include="img\desktop-3-1.png" />
     <Content Include="img\desktop-3.png" />
+    <Content Include="img\footersp.png" />
     <Content Include="img\img_footer.png" />
     <Content Include="img\list_ico.png" />
     <Content Include="img\logo.png" />
@@ -225,6 +228,7 @@
     <Content Include="img\reg.png" />
     <Content Include="img\sdt.png" />
     <Content Include="img\slogan.png" />
+    <Content Include="img\sonmoi.png" />
     <Content Include="img\top-bg.png" />
     <Content Include="img\top-bg2.png" />
     <Content Include="img\top-sp.png" />
@@ -245,6 +249,10 @@
       <DependentUpon>Zaloka.edmx</DependentUpon>
       <LastGenOutput>Zaloka.cs</LastGenOutput>
     </Content>
+    <Content Include="Scripts\admin\bootstrap-datepicker.js" />
+    <Content Include="Scripts\admin\jquery.table2excel.min.js" />
+    <Content Include="Scripts\admin\jquery.tabletoCSV.js" />
+    <Content Include="Scripts\admin\main.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\Zaloka.edmx">

@@ -4,14 +4,146 @@
 }
 
 <!DOCTYPE html>
-
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8">
+    <title>ZalokaUser - Admin</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/admin/main.js")"></script>
+
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="http://momentjs.com/downloads/moment.min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/admin/jquery.table2excel.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/admin/bootstrap-datepicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/admin/jquery.tabletoCSV.js")"></script>
+
+
+    
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="@Url.Content("~/Content/bootstrap-datepicker.css")" rel="stylesheet" type="text/css" media="all" />
+
+    <style>
+        button[disabled] {
+            color: white;
+        }
+    </style>
 </head>
-<body>
-    <div> 
+<body class="sidebar-mini wysihtml5-supported skin-red-light">
+    <div class="wrapper">
+
+
+
+        <section class="content">
+            <div style="text-align:center;margin:10px;">
+                <label>From</label>
+                <input id="dayfrom" style="width:104px;" />
+                <label>To</label>
+                <input id="dayto" style="width:104px;" />
+                <input id="exportcsv" type="button" onclick="tableToExcel()" value="Export"><span> Bỏ trống From hoặc To nếu không có giới hạn</span>
+
+
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div style="border:1px solid #d2d6de;" class="box">
+                        <div class="box-header">
+                        </div><!-- /.box-header -->
+                        <div class="box-body table-responsive no-padding">
+                            <table id="DNtable" class="table table-bordered table-condensed table-hover table-striped" style="padding-left:10px">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Ngày Đăng Kí</th>
+                                        <th>utm_source</th>
+                                        <th>utm_medium</th>
+                                        <th>utm_campaign</th>
+                                        <th>utm_content</th>
+                                    </tr>
+                                </thead>
+                                <tfoot class="noExl">
+                                    <tr class="noExl">
+                                        <th><input /></th><!-- Tên người liên hệ -->
+                                        <th><input /></th><!-- Email -->
+                                        <th><input style="width:79px;" /></th><!-- Điện Thoại -->
+                                        <th><input style="width:104px;" class="datepicker" /></th> <!-- Ngày Đăng Kí -->
+                                        <th><input /></th><!-- utm_sourse -->
+                                        <th><input /></th><!-- utm_medium -->
+                                        <th><input /></th><!-- utm_campaign -->
+                                        <th><input /></th><!-- utm_content -->
+
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.Name</td>
+                                            <td>@item.Email</td>
+                                            <td>@item.Phone</td>
+                                            <td>@item.NgayDangKi</td>
+                                            <td>@item.utm_sourse</td>
+                                            <td>@item.utm_medium</td>
+                                            <td>@item.utm_campaign</td>
+                                            <td>@item.utm_content</td>
+                                        </tr>
+                                    }
+
+
+                                </tbody>
+
+
+
+                            </table>
+
+
+
+                            <table style="display:none;" id="DNtableajax">
+                                <caption>Report_MSB25_Gói_Sản_Phẩm_@DateTime.Now.ToString("dd'-'MM'-'yyyy'-'hh'-'mm'-'ss")</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Tên người liên hệ</th>
+                                        <th>Email</th>
+                                        <th>Điện Thoại</th>
+                                        <th>Tên Doanh Nghiệp</th>
+                                        <th>Loại Doanh Nghiệp</th>
+                                        <th>Mã số thuế</th>
+                                        <th>Số tiền cần vay</th>
+                                        <th>Loại tài sản đảm bảo</th>
+                                        <th>Ngày Đăng Kí</th>
+                                        <th>Source</th>
+                                        <th>utm_sourse</th>
+                                        <th>utm_medium</th>
+                                        <th>utm_campaign</th>
+                                        <th>utm_content</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="DNtablebody"></tbody>
+                            </table>
+
+                        </div><!-- /.box-body -->
+                    </div><!-- /.box -->
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+
+
     </div>
+
+
 </body>
 </html>

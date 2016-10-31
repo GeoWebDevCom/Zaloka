@@ -7,27 +7,31 @@
     <div class="my_slide">
         <div class="mySlides slide1">
             <article class="desktop">
-                <img width="100%" height="auto" src="/img/top-bg.png">
+                <img width="100%" height="auto" src="img/top-bg.png">
             </article>
             <article class="mobile">
-                <img width="100%" height="auto" src="/img/m-top-bg.png">
+                <img width="100%" height="auto" src="img/m-top-bg.png">
             </article>
         </div>
         <div class="mySlides slide2">
             <article class="desktop">
-                <img width="100%" height="auto" src="/img/top-bg2.png">
+                <img width="100%" height="auto" src="img/top-bg2.png">
             </article>
             <article class="mobile">
-                <img width="100%" height="auto" src="/img/m-top-bg2.png">
+                <img width="100%" height="auto" src="img/m-top-bg2.png">
             </article>
         </div>
         <div class="dot_group">
             <span class="dot active" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
         </div>
+        <div class="desktop navigator">
+            <img class="left" src="img/prev.png" onclick="plusSlides(-1)">
+            <img class="right" src="img/next.png" onclick="plusSlides(1)">
+        </div>
     </div>
     <aside class="mobile">
-        <img width="100%" height="auto" src="/img/top-sp.png">
+        <img width="100%" height="auto" src="img/top-sp.png">
     </aside>
     <aside class="reg_aside">
         <h2>Đăng ký tư vấn & nhận ưu đãi</h2>
@@ -38,43 +42,44 @@
         <table class="reg_form">
             <tr>
                 <td>Họ và tên:</td>
-                <td><input id="name" type="text" /></td>
+                <td><input id="name1" type="text" /></td>
             </tr>
             <tr>
                 <td>Email:</td>
-                <td><input id="email" type="text" /></td>
+                <td><input id="email1" type="text" /></td>
             </tr>
             <tr>
                 <td>Số điện thoại:</td>
-                <td><input id="phone" type="text" /></td>
+                <td><input id="phone1" type="text" /></td>
             </tr>
         </table>
-        <a class="btn-reg" href="thankyou.html">Đăng ký tư vấn</a>
-        <img src="/img/sdt.png" />
+        <span id="dangky1" class="btn-reg">Đăng ký tư vấn</span>
+        <img src="img/sdt.png" />
     </aside>
 </section>
 <section>
     <article id="used">
         <div class="used_head">
-            <img src="/img/slogan.png">
+            <i><span> 4 </span> tuần <span> 6 </span> công dụng<br></i>
+            Trải nghiệm thần kỳ, nghệ thuật cuốn hút từ làn mi
         </div>
         <div class="section group">
             <div class="col span_1_of_3">
-                <img alt="" src="/img/used/1.png">
+                <img alt="" src="img/used/1.png">
                 <p>
                     Giúp mi mọc tốt với 5 tiêu chí:<br> Dày - Dài - Cong - Đen -
                     Bóng như
                 </p>
             </div>
             <div class="col span_1_of_3">
-                <img alt="" src="/img/used/2.png">
+                <img alt="" src="img/used/2.png">
                 <p>
                     Phục hồi mau chóng những hư tổn do các sản phẩm kém chất
                     lượng trước đây gây ra
                 </p>
             </div>
             <div class="col span_1_of_3">
-                <img alt="" src="/img/used/3.png">
+                <img alt="" src="img/used/3.png">
                 <p>
                     Giữ cho vùng da quanh mắt luôn căng mịn, tươi tắn tràn đầy
                     sức sống
@@ -83,21 +88,21 @@
         </div>
         <div class="section group">
             <div class="col span_1_of_3">
-                <img alt="" src="/img/used/4.png">
+                <img alt="" src="img/used/4.png">
                 <p>
                     Kích thích các nang lông khoẻ hơn, và cải thiện các nang
                     lông mi mềm và dễ gãy giúp tăng độ đàn hồi cho lông mi
                 </p>
             </div>
             <div class="col span_1_of_3">
-                <img alt="" src="/img/used/5.png">
+                <img alt="" src="img/used/5.png">
                 <p>
                     Chất chống oxy hoá tự nhiên mạnh mẽ sẽ chữa trị và bảo vệ
                     vùng da nhạy cảm xung quanh mắt
                 </p>
             </div>
             <div class="col span_1_of_3">
-                <img alt="" src="/img/used/6.png">
+                <img alt="" src="img/used/6.png">
                 <p>
                     Bảo vệ một lớp oxy hoá tự nhiên giúp mi chống lại các tác
                     động không tốt từ môi trường
@@ -107,8 +112,8 @@
     </article>
     <article id="how" class="list">
         <div>
-            <img class="desktop topline" src="/img/desktop-3.png">
-            <img class="mobile topline" src="/img/mobile-3.png">
+            <img class="desktop topline" src="img/desktop-3.png">
+            <img class="mobile topline" src="img/mobile-3.png">
             <ul>
                 <li>
                     Bảo vệ một lớp oxy hoá tự nhiên giúp mi chống lại các tác động
@@ -135,62 +140,55 @@
                     theo chỉ dẫn.
                 </li>
             </ul>
-            <img class="desktop pro" src="/img/desktop-3-1.png">
+            <img class="desktop pro" src="img/desktop-3-1.png">
         </div>
     </article>
-    <article id="register" class="footer_img" style="position:relative">
-        <img class="product" src="/img/img_footer.png">
-        <div class="mobile680">
-            <a href="#home"><img class="btn_reg" src="/img/reg.png"></a>
-        </div>
-        
-        <aside class="reg_aside" style="bottom:auto; top:10%">
-            <h2>Đăng ký tư vấn & nhận ưu đãi</h2>
-            <p>
-                Vui lòng nhập thông tin ở dưới để<br> chúng tôi liên hệ và tư vấn
-                thêm cho bạn nhé!
-            </p>
-            <table class="reg_form">
+    <article id="register" class="footer_img">
+        <div class="gift_div">
+            <img class="product" src="img/footersp.png">
+            <div class="price_div">
+                1 lọ cho mi dài giá
+                <div class="price"><span>1.550.000</span>đ</div>
+                Mua 2 lọ giảm còn
+                <div class="price"><span>1.950.000</span>đ</div>
+                <div class="twoItem">/2 lọ</div>
+            </div>
+            <table class="sonmoi">
                 <tr>
-                    <td>Họ và tên:</td>
-                    <td><input id="name" type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td><input id="email" type="text" /></td>
-                </tr>
-                <tr>
-                    <td>Số điện thoại:</td>
-                    <td><input id="phone" type="text" /></td>
+                    <td width="200px">Tặng son <b>Wet & Wild</b><br>nhập khẩu trực tiếp<br>từ Mỹ, trị giá<br><b>450.000đ*</b></td>
+                    <td>
+                        <img src="img/sonmoi.png">
+                        <small>*số lượng có hạn</small>
+                    </td>
                 </tr>
             </table>
-            <a class="btn-reg" href="thankyou.html">Đăng ký tư vấn</a>
-            <img src="/img/sdt.png" />
-        </aside>
+            <div class="mobile680">
+                <a href="#home"><img class="btn_reg" src="img/reg.png"></a>
+            </div>
 
+            <aside class="reg_aside" style="bottom:auto; top:10%">
+                <h2>Đăng ký tư vấn & nhận ưu đãi</h2>
+                <p>
+                    Vui lòng nhập thông tin ở dưới để<br> chúng tôi liên hệ và tư vấn
+                    thêm cho bạn nhé!
+                </p>
+                <table class="reg_form">
+                    <tr>
+                        <td>Họ và tên:</td>
+                        <td><input id="name2" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input id="email2" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>Số điện thoại:</td>
+                        <td><input id="phone2" type="text" /></td>
+                    </tr>
+                </table>
+                <span id="dangky2" class="btn-reg">Đăng ký tư vấn</span>
+                <img src="/img/sdt.png" />
+            </aside>
+        </div>
     </article>
 </section>
-
-
-<script>
-
-    function submitInfor() {
-
-        $.ajax({
-            method: "POST",
-            url: "/Home/SubmitInfor",
-            data: {
-                name: $("#name").val(),
-                email: $("#email").val(),
-                phone: $("#phone").val()
-            }
-        }).done(function (data) {
-            if (data == "ok") {
-                window.location = "/";
-            } else {
-                console.log("Lưu thất bại");
-            }
-        })
-    }
-
-</script>
