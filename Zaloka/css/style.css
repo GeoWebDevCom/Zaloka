@@ -152,7 +152,7 @@ ul.topnav li.icon {display: none;}
 	right: 40%;
 }
 .reg_aside {
-	width: 320px;
+	width: 420px;
 	padding: 10px;
 	border: solid 1px #CC9933;
 	color: #666;
@@ -178,7 +178,9 @@ ul.topnav li.icon {display: none;}
 	background: #eee;
 	border-radius: 5px;
 	border: solid 1px #ddd;
-	width: 190px;
+	/*width: 190px;*/
+    width:260px;
+    max-width:100%;
 }
 
 .reg_aside img {
@@ -202,7 +204,7 @@ ul.topnav li.icon {display: none;}
 	color:black;
 }
 .btn-reg{
-	width:310px;
+	width:100%;
 }
 .btn-back{
 	width:150px;
@@ -381,6 +383,11 @@ footer ul {
 	color:#807d79;
 	
 }
+
+.reg_form{
+    width:100%;
+}
+
 
 /*  GO FULL WIDTH AT LESS THAN 880 PIXELS */
 @media only screen and (max-width: 880px) {
