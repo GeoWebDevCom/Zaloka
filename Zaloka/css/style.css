@@ -152,7 +152,7 @@ ul.topnav li.icon {display: none;}
 	right: 40%;
 }
 .reg_aside {
-	width: 420px;
+	width: 406px;
 	padding: 10px;
 	border: solid 1px #CC9933;
 	color: #666;
@@ -161,7 +161,7 @@ ul.topnav li.icon {display: none;}
 	background-color: #fff;
 	position: absolute;
 	bottom: 0;
-	right: 5%;
+	right: 5.5%;
 }
 
 .reg_aside h2 {
@@ -231,11 +231,13 @@ ul.topnav li.icon {display: none;}
 	position:absolute;
 	top:50%;
 	left:10px;
+    cursor:pointer;
 }
 .navigator .right{
 	position:absolute;
 	top:50%;
 	right:10px;
+    cursor:pointer;
 }
 /* The dots/bullets/indicators */
 .dot_group{
