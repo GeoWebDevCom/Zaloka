@@ -18,6 +18,7 @@
           <Property Name="utm_campaign" Type="nvarchar(max)" />
           <Property Name="utm_content" Type="nvarchar(max)" />
           <Property Name="NgayDangKi" Type="datetime" />
+          <Property Name="utm_term" Type="nvarchar(max)" />
         </EntityType>
         <EntityContainer Name="ZalokaModelStoreContainer">
           <EntitySet Name="ZalokaUser" EntityType="Self.ZalokaUser" Schema="dbo" store:Type="Tables" />
@@ -39,6 +40,7 @@
           <Property Name="utm_campaign" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="utm_content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="NgayDangKi" Type="DateTime" Precision="3" />
+          <Property Name="utm_term" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="ZalokaEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ZalokaUsers" EntityType="Self.ZalokaUser" />
@@ -52,6 +54,7 @@
           <EntitySetMapping Name="ZalokaUsers">
             <EntityTypeMapping TypeName="ZalokaModel.ZalokaUser">
               <MappingFragment StoreEntitySet="ZalokaUser">
+                <ScalarProperty Name="utm_term" ColumnName="utm_term" />
                 <ScalarProperty Name="NgayDangKi" ColumnName="NgayDangKi" />
                 <ScalarProperty Name="utm_content" ColumnName="utm_content" />
                 <ScalarProperty Name="utm_campaign" ColumnName="utm_campaign" />

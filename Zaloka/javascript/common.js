@@ -51,6 +51,7 @@ function DangKi1() {
             utm_medium: getParameterByName('utm_medium'),
             utm_campaign: getParameterByName('utm_campaign'),
             utm_content: getParameterByName('utm_content'),
+            utm_term: getParameterByName('utm_term'),
         }
     }).done(function (data) {
         if (data == "ok") {
@@ -73,6 +74,7 @@ function DangKi2() {
             utm_medium: getParameterByName('utm_medium'),
             utm_campaign: getParameterByName('utm_campaign'),
             utm_content: getParameterByName('utm_content'),
+            utm_term: getParameterByName('utm_term'),
         }
     }).done(function (data) {
         if (data == "ok") {

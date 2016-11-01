@@ -23,7 +23,7 @@ namespace Zaloka.Controllers
         }
 
 
-        public string ThemUser(string Name,string Phone,string Email,string utm_sourse,string utm_medium,string utm_campaign,string utm_content)
+        public string ThemUser(string Name,string Phone,string Email,string utm_sourse,string utm_medium,string utm_campaign,string utm_content, string utm_term)
         {
             using (ZalokaEntities ctx = new ZalokaEntities())
             {
@@ -36,6 +36,7 @@ namespace Zaloka.Controllers
                     utm_medium=utm_medium,
                     utm_campaign=utm_campaign,
                     utm_content=utm_content,
+                    utm_term =utm_term,
                     NgayDangKi=DateTime.Now
                 };
                 try
@@ -66,6 +67,7 @@ namespace Zaloka.Controllers
                     utm_medium=t.utm_medium,
                     utm_campaign=t.utm_campaign,
                     utm_content=t.utm_content,
+                    utm_term=t.utm_term,
                     NgayDangKi=DateTime.Now
                 }).ToList();
 
