@@ -200,6 +200,7 @@ ul.topnav li.icon {display: none;}
 	text-decoration:none;
 	text-align:center;
 	color:black;
+    cursor:pointer;
 }
 .btn-reg{
 	width:310px;
