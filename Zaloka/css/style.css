@@ -244,7 +244,7 @@ ul.topnav li.icon {display: none;}
 .dot_group{
 	width:100%;
 	position:absolute;
-	z-index:4;
+	/*z-index:4;*/
 	text-align:center;
 	bottom: 20px;
 }
@@ -573,6 +573,9 @@ footer ul {
 	.price_div .twoItem {
 		font-size:12px;
 	}
+    #formdangky2{
+        display:none;
+    }
 }
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 @media only screen and (max-width: 480px) {
@@ -610,6 +613,13 @@ footer ul {
 	.sonmoi td img{
 		height:100px;
 	}
+
+    #formdangky2{
+        display:none;
+    }
+    /*.dot_group{
+        display:none;
+    }*/
 }
 @media only screen and (max-width: 360px) {
 	.sonmoi{

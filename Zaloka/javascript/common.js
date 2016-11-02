@@ -115,5 +115,10 @@ $(document).ready(function () {
             DangKi2();
     });
 
-    
+    if ($(window).width() < 480) {
+        $("#dktvm").attr("href", "#formdangky1");
+    }
+    else {
+    }
+
 });
