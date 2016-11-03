@@ -68,7 +68,7 @@ namespace Zaloka.Controllers
                     utm_campaign=t.utm_campaign,
                     utm_content=t.utm_content,
                     utm_term=t.utm_term,
-                    NgayDangKi=DateTime.Now
+                    NgayDangKi=t.NgayDangKi
                 }).ToList();
 
                 return View(DNList);
