@@ -11,6 +11,7 @@ header {
 	z-index: 4;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.8);
+    /*background-color:white;*/
 }
 body {margin:0;}
 .logo{
@@ -495,10 +496,10 @@ footer ul {
 		max-width:90%;
 	}
 	#thankyou .thankContent aside{
-		margin-left; 20px;
+		margin-left:20px;
 	}
 	#thankyou .thankContent .product{
-		margin-right; 20px;
+		margin-right: 20px;
 	}
 	.used_head {
 		width: 100%;
@@ -629,4 +630,19 @@ footer ul {
 
 .missing-field {
     border-color:red !important;
+}
+
+.reg_aside2 h2 {
+    color: #CC9933;
+    text-align: center;
+}
+
+.reg_aside2 {
+    border: solid 1px #CC9933;
+    color: #666;
+    background-color: #fff;
+}
+
+#formdangky3{
+    display:none;
 }

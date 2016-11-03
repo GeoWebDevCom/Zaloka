@@ -85,6 +85,30 @@ function DangKi2() {
     })
 }
 
+function DangKi3() {
+    $.ajax({
+        method: "POST",
+        url: "/Home/ThemUser",
+        data: {
+            Name: $("#name3").val(),
+            Phone: $("#phone3").val(),
+            Email: $("#email3").val(),
+            utm_sourse: getParameterByName('utm_source'),
+            utm_medium: getParameterByName('utm_medium'),
+            utm_campaign: getParameterByName('utm_campaign'),
+            utm_content: getParameterByName('utm_content'),
+            utm_term: getParameterByName('utm_term'),
+        }
+    }).done(function (data) {
+        if (data == "ok") {
+            window.location = "Home/ThankYou";
+        } else {
+            console.log("fail3");
+        }
+    })
+}
+
+
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
@@ -115,8 +139,20 @@ $(document).ready(function () {
             DangKi2();
     });
 
+    $("#dangky3").click(function (e) {
+
+
+        $("#phone3").removeClass("missing-field");
+        if ((!$("#phone3").val())) {
+            $("#phone3").addClass("missing-field");
+        }
+        else
+            DangKi3();
+    });
+
     if ($(window).width() < 480) {
         $("#dktvm").attr("href", "#formdangky1");
+        $("#formdangky3").show();
     }
     else {
     }
