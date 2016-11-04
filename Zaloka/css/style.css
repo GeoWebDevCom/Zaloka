@@ -646,3 +646,10 @@ footer ul {
 #formdangky3{
     display:none;
 }
+
+.hinhtron{
+    border-color: #DDBC7F;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: thin;
+}
