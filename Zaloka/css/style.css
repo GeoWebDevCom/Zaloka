@@ -653,3 +653,294 @@ footer ul {
     border-radius: 50%;
     border-width: thin;
 }
+
+/* BEGIN newsection */
+/* BEGIN newsection */
+.dandgia{
+	background-image:url("../img/newsection/graybg.png") ;
+	margin-top:-20px;
+	padding:50px 0px;
+	background-size: 100% 100%;
+}
+.danhgia_div{
+	width:80%;
+	margin:auto;
+	max-width: 850px;
+	font-size: 13px;
+	}
+.danhgia_title{
+	width: 90%;
+	margin: 10px auto;
+	text-align: center;
+	color: #f13662;
+	font-size: 20px;
+}
+.cross_line{
+	width: 100px;
+	height: 4px;
+	background-color: #f13662;
+	margin: 0px  auto 25px auto;
+}
+.danhgia_div p{
+	border: solid 1px #444; 
+	padding: 25px;
+	border-radius: 15px;
+	position: relative;
+}
+.kh-img{
+	border-radius: 50px;
+	height: 90px;
+	width: 90px;
+	border: solid 2px #f13662; 
+	margin-right: 10px;
+}
+.nhanxet{
+	margin: 20px 0px;
+}
+.img_ba{
+	text-align: center;
+	margin: auto;
+}
+.quoteLeft{
+	position: absolute;
+	top:-20px;
+	left: -20px;
+	padding: 12px;
+	border-radius: 15px;
+	
+	
+}
+.p1 .quoteRight, .p2 .quoteLeft{
+	background-color: #fefefe;
+}
+.p2 .quoteRight, .p1 .quoteLeft{
+	background-color: #FCFBFB;
+}
+.quoteRight{
+	position: absolute;
+	bottom:-20px;
+	right: -20px;
+	padding: 12px;
+	border-radius: 15px;
+}
+.bando{
+	background-image:url("../img/newsection/lightbg.png") ;
+	margin-top:-20px;
+	background-size: 100% 100%;
+	padding:50px;
+}
+.bando_div{
+	width:80%;
+	margin:auto;
+	display: table;
+}
+.bando_img{
+	width: 95%;
+	height: 100%
+	margin: auto;
+	border-radius: 25px;
+	border: solid 2px #f13662; 
+	vertical-align: middle;
+}
+
+.table_newsection td{
+	font-size: 15px;
+	padding: 7px 0px;
+	display: table;
+	
+}
+.table_newsection div{
+	display: table-cell;
+	vertical-align: middle;
+}
+.round_img{
+	width: 64px;
+	margin-right: 15px;
+	float: left;
+}
+.mobileFooter{
+		width:100%;
+		text-align:center;
+		background-color:#f13662;
+		padding:20px 0px;
+		color:#fff;
+		font-size:18px;
+	}
+	.mobileFooter strong{
+		font-size:20px;
+		line-height:30px;
+	}
+@media only screen and (max-width: 1130px) {
+	.list div, .danhgia_div, .bando_div{
+		width:95%;
+	}
+	.list ul{
+		margin-left:0px;
+	}
+}
+
+/*  GO FULL WIDTH AT LESS THAN 880 PIXELS */
+@media only screen and (max-width: 880px) {
+	.top_section{
+		position:static;
+	}
+	.reg_aside {
+		position:static;
+		margin:auto;
+		width: 98%;
+		border-radius:0;
+		padding: 10px 0;
+	}
+	.btn-reg{
+		border-radius: 25px;
+	}
+	.logo{
+		margin:10px;
+	}
+	ul.topnav{
+		margin-left:10px;
+	}
+	ul.topnav li a {
+	  padding: 18px 15px;
+	}
+	.desktop{
+		display:none;
+	}
+	.mobile{
+		display:block;
+	}
+	.reg_form{
+		max-width:400px;
+		margin:auto;
+	}
+	.list ul{
+		clear:both;
+	}
+	.list ul, .list .topline, .user_topline{
+		padding:0;
+		margin:auto;
+		max-width:90%;
+	}
+	#thankyou .thankContent aside{
+		margin-left; 20px;
+	}
+	#thankyou .thankContent .product{
+		margin-right; 20px;
+	}
+	.used_head {
+		width: 100%;
+		margin: auto;
+		margin-bottom:20px;
+	}
+	.bando{
+		padding:30px 0px;
+	}
+}
+/*  GO FULL WIDTH AT LESS THAN 680 PIXELS */
+@media only screen and (max-width: 680px) {
+	ul.topnav{
+		margin-left:0;
+	}
+	footer div {
+		clear: both;
+		margin: 10px auto;
+	}
+	.r_border {
+		margin-right: 10px;
+		margin-bottom: 10px;
+		border-right: none;
+	}
+	.footer_img .product {
+		height: 450px;
+		margin:auto;
+	}
+	.span_1_of_3 ,.span_2_of_3,.span_3_of_5,.span_2_of_5 {
+		width: 100%;
+	}
+	.desktop680{
+		display:none;
+	}
+	.mobile680{
+		display:block;
+	}
+	
+	.reg_form input{
+	  width:auto;
+  }
+	#thankyou .thankContent aside{
+		margin:20px auto;
+	}
+	#thankyou .thankContent .product{
+		max-width:100%;
+		margin:-15% auto 0 auto;
+		text-align:center;
+	}
+	.footer_img .gift_div{
+		margin:30px auto 0px auto;
+	}
+	.price_div{
+		top:0;
+		width:150px;
+	}
+	.price{
+		font-size:30px;
+		padding:10px;
+	}
+	.sonmoi{
+		left:150px;
+	}
+	.price_div .twoItem {
+		font-size:12px;
+	}
+	.mobileFooter, .mobileFooter strong{
+		font-size: 14px;
+	}
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.reg_aside {
+		margin: auto;
+	}
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+	
+	.footer_img .product {
+		height: 300px;
+	}
+	.used_head{
+		font-size: 18px;
+	}
+	.used_head i{
+		font-size: 20px;
+	}
+	.price_div{
+		left:150px;
+		width:120px;
+		font-size:12px;
+	}
+	.price{
+		font-size:20px;
+		padding:5px;
+	}
+	.sonmoi{
+		width:180px;
+		left:120px;
+		font-size:12px;
+		bottom:10px;
+	}
+	.sonmoi td img{
+		height:100px;
+	}
+}
+@media only screen and (max-width: 360px) {
+	.sonmoi{
+		width:150px;
+	}
+}
+/*end newsection*/
+/*end newsection*/
+
+.span_3_of_5 {
+	width: 58.2%;
+}
