@@ -944,3 +944,46 @@ footer ul {
 .span_3_of_5 {
 	width: 58.2%;
 }
+
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    /*padding-bottom: 56.25%;*/
+    /*padding-top: 25px;*/
+    height: 0;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.intro_div{
+	width: 100%;
+	max-width: 960px;
+	margin:20px auto 60px auto;
+	text-align: center;
+}
+
+.intro p {
+	margin-bottom: 20px;
+}
+
+.intro .video {
+	display: block;
+	/*width: 80%;*/
+	margin: auto;
+	height:456px;
+	/*background-color:#f8bcbc;*/
+}
+
+.intro_div{
+	width: 100%;
+	max-width: 960px;
+	margin:20px auto 60px auto;
+	text-align: center;
+}
